@@ -1,0 +1,10 @@
+{
+  "name": "@probe/lib",
+  "version": "1.0.0",
+  "description": "Shared utility library workspace package",
+  "main": "index.js",
+  "dependencies": {
+    "ms": "^2.1.3",
+    "semver": "^7.6.3"
+  }
+}
