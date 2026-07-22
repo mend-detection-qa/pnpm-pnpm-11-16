@@ -1,0 +1,15 @@
+packages:
+  - packages/*
+
+# New in pnpm 11.16 — update settings at workspace root.
+# These keys must NOT trip Mend's pnpm-workspace.yaml parser
+# by being misclassified as package references or glob patterns.
+update:
+  excludeNewer: false
+  includeDirect: true
+
+# New in pnpm 11.16 — audit settings at workspace root.
+# Mend must parse this file and ignore unknown top-level keys.
+audit:
+  ignoreCves: []
+  ignoreGhsas: []
