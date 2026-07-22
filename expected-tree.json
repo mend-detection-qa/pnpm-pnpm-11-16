@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.2",
+  "pm": "pnpm",
+  "pm_version_tested": "7",
+  "pm_version_under_test": "11.16.0",
+  "source_file": "/opt/qa-detection-agents/output/_call-adf5057345ec/pnpm/workspace-update-audit-settings-20260722-210151/pnpm-lock.yaml",
+  "generated_at": "2026-07-22T21:01:51Z",
+  "root": {
+    "name": "workspace-update-audit-settings",
+    "version": "0.0.1",
+    "dependencies": [
+      "@probe/app",
+      "@probe/lib",
+      "prettier",
+      "typescript"
+    ]
+  },
+  "packages": {
+    "@probe/app": {
+      "version": "1.0.0",
+      "source": "local",
+      "source_detail": {
+        "path": "packages/app",
+        "workspace": true
+      },
+      "group": "main",
+      "dependencies": [
+        "@probe/lib",
+        "debug"
+      ]
+    },
+    "@probe/lib": {
+      "version": "1.0.0",
+      "source": "local",
+      "source_detail": {
+        "path": "packages/lib",
+        "workspace": true
+      },
+      "group": "main",
+      "dependencies": [
+        "ms",
+        "semver"
+      ]
+    },
+    "debug": {
+      "version": "4.3.6",
+      "source": "registry",
+      "source_detail": {
+        "integrity": "sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUw=="
+      },
+      "group": "main",
+      "dependencies": [
+        "ms"
+      ]
+    },
+    "ms": {
+      "version": "2.1.3",
+      "source": "registry",
+      "source_detail": {
+        "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTg=="
+      },
+      "group": "main",
+      "dependencies": []
+    },
+    "prettier": {
+      "version": "3.3.3",
+      "source": "registry",
+      "source_detail": {
+        "integrity": "sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/ip02Vq2lBe4HJoQ=="
+      },
+      "group": "dev",
+      "dependencies": []
+    },
+    "semver": {
+      "version": "7.6.3",
+      "source": "registry",
+      "source_detail": {
+        "integrity": "sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmziFkw=="
+      },
+      "group": "main",
+      "dependencies": []
+    },
+    "typescript": {
+      "version": "5.5.4",
+      "source": "registry",
+      "source_detail": {
+        "integrity": "sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+g=="
+      },
+      "group": "dev",
+      "dependencies": []
+    }
+  },
+  "warnings": [
+    "pnpm-workspace.yaml contains new top-level keys 'update' and 'audit' (added in pnpm 11.16). These are workspace-wide settings, not package references. Mend parsers that do not recognize these keys may log parse warnings or abort workspace discovery.",
+    "This is an exploratory probe: the UA resolver file does not document explicit handling of pnpm-workspace.yaml top-level extension keys. Divergence from expected-tree should be classified as a new detection gap.",
+    "ms@2.1.3 is deduplicated: shared between @probe/lib (direct dep) and debug@4.3.6 (transitive dep). Single packages entry represents both usages."
+  ]
+}
