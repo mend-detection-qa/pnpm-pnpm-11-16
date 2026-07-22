@@ -1,0 +1,77 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      typescript:
+        specifier: ^5.5.4
+        version: 5.5.4
+
+  packages/app:
+    dependencies:
+      '@probe/lib':
+        specifier: workspace:*
+        version: link:../lib
+      debug:
+        specifier: ^4.3.6
+        version: 4.3.6
+
+  packages/lib:
+    dependencies:
+      ms:
+        specifier: ^2.1.3
+        version: 2.1.3
+      semver:
+        specifier: ^7.6.3
+        version: 7.6.3
+
+packages:
+
+  debug@4.3.6:
+    resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUw==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTg==}
+
+  prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/ip02Vq2lBe4HJoQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  semver@7.6.3:
+    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmziFkw==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+g==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  debug@4.3.6:
+    dependencies:
+      ms: 2.1.3
+
+  ms@2.1.3: {}
+
+  prettier@3.3.3: {}
+
+  semver@7.6.3: {}
+
+  typescript@5.5.4: {}
