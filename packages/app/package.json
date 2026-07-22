@@ -1,0 +1,10 @@
+{
+  "name": "@probe/app",
+  "version": "1.0.0",
+  "description": "Application workspace package — depends on @probe/lib",
+  "main": "index.js",
+  "dependencies": {
+    "@probe/lib": "workspace:*",
+    "debug": "^4.3.6"
+  }
+}
